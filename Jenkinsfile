@@ -7,7 +7,7 @@ pipeline {
                 script {
                     def num1 = input(message: 'Enter the first number:', parameters: [string(defaultValue: '', description: 'First number', name: 'num1')])
                     def num2 = input(message: 'Enter the second number:', parameters: [string(defaultValue: '', description: 'Second number', name: 'num2')])
-                    sh "python3 Add2Numbers.py ${num1} ${num2}"
+                    sh "python3 Add2Number.py ${num1} ${num2}"
                 }
             }
         }
